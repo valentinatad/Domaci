@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+}
+.div1{
+    background-color: black;
+    text-align: right;
+    font-size: 1.5vw;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    
+}
+
+.navBar li {
+    display: inline;
+    padding: 10px;
+
+}
+a {
+    color:white;
+    text-decoration: none;
+
+}
+a:hover
+{
+    color: grey;
+}
+.div2 {
+    margin-top: 50px;
+    background-image: url("https://images.pexels.com/photos/1022692/pexels-photo-1022692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    border-bottom: oldlace 10px solid;
+}
+.div3{
+    background-image: url("https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-bottom:oldlace 10px solid;
+    position: sticky;
+
+}
+.slika1 {
+    size: 100% auto;
+    width:250px;
+    height: 350px;
+    margin: 0 auto;
+    display: block;
+    border: white solid 3px;
+    border-radius: 5px;
+}
+p{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.7vw;
+}
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+.ime {
+    font-family: 'Gochi Hand', cursive;
+}
+h1 {
+    font-size: 3vw;
+}
+.div4 {
+    font-size: 1.6vw;
+}
+.div5
+{padding-left: 60px;
+font-size: 1.6vw}
+.oganj {
+    color: red;
+}
+.div6 {
+    font-size: 1.6vw;
+}
+.div7 {
+    padding-left: 60px;
+    font-size: 1.6vw;
+}
+.div8 {
+    background-image: url("https://images.pexels.com/photos/1022692/pexels-photo-1022692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 300px;}
+#Projekti 
+{ margin-left: 10px;
+  color: whitesmoke;
+  font-size: 3vw;}
+  .projekat1
+  {
+      width: 350px;
+      height:200px;
+      border: white 10px solid;
+      margin-left: 10px;
+  }
+
+  #Kontakti {
+      background-color: black;
+      padding: 40px;
+      position: relative;
+      background-size: 100% auto;
+      
+  }
+  .kontakti1 {
+      color:white;
+      font-size: 2vw;
+  }
+  .facebook {
+      width:50px;
+      height:50px;
+      margin-left: 150px;
+  }
+  .gitHub {width:50px;
+    height:50px;
+    margin-left: 30px;
+
+  }
+  .contactMe {
+    width:70px;
+    height:70px;
+    margin-left: 30px;
+
+  }
+  #myBtn {
+    display: none; 
+    
+    bottom: 30px; 
+    margin-left: 500px;
+    z-index: 99;
+    border: none; 
+    outline: none;
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
