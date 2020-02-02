@@ -1,0 +1,111 @@
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 9; 
+            background-color: whitesmoke;
+            text-align: left;
+            font-size: 1.5vw;
+            position: fixed;
+            z-index: 1;
+            width:100%;}
+            ul li {
+                display:inline;
+            }
+            li {
+                padding: 10px;
+                font-size: 2vw;
+                
+            }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: grey;
+        }
+        .div2 { grid-area: 2 / 1 / 4 / 9;
+        background-image: url("https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.15752-9/83510655_2587388731476812_5226212507529510912_n.jpg?_nc_cat=100&_nc_oc=AQkcQ_64p0Vz01Gm-5AsjmSvsgwW6gSDX9V0bjVWu2OjuAyUDuoqDpLNW37tbwYkksg&_nc_ht=scontent.fbeg4-1.fna&oh=860717f9732dae04d0aace6d51a2aafb&oe=5E9312E4");
+        background-size: cover; }
+        .div3 { grid-area: 4 / 3 / 6 / 4; }
+        .div4 { grid-area: 4 / 5 / 6 / 6; }
+        .div5 { grid-area: 6 / 3 / 7 / 4; 
+        text-align: center;
+        font-size: 1.5vw;}
+        .div6 { grid-area: 6 / 5 / 7 / 6;
+            text-align: center;
+            font-size: 1.5vw;} 
+        .div7 { grid-area: 7 / 3 / 8 / 4;
+                color: red;
+                text-align: center; 
+            font-size: 1.5vw;}
+        .div8 { grid-area: 7 / 5 / 8 / 6;
+            color: red;
+            text-align: center; 
+        font-size: 1.5vw; }
+        .container { grid-area: 8 / 1 / 10 / 9;
+        background-color: red; } 
+        .p1 {
+            color: whitesmoke;
+            background-color: red;
+            text-align: center;
+            margin-left: 600px;
+            margin-right: 600px;
+            font-size: 1.5vw;
+            padding: 10px;
+
+        }
+        .p2 {
+            color: whitesmoke;
+            background-color: red;
+            text-align: center;
+            margin-left: 600px;
+            margin-right: 600px;
+        }
+        .p3 {
+            border: 2px red solid;
+            border-radius: 5px;
+        }
+        .image1 {
+            width: 300px;
+            height: 300px;
+            position: center;
+        }
+        .h11 {
+            text-align: center;
+        }
+        input[type=text], select, textarea {
+            border: 1px solid #ccc;
+          }
+          
+          input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+          .container {
+            border-radius: 5px;
+            background-color: red;
+            padding-left: 10px;
+    
+          }
+          
+        
+          @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+              width: 100%;
+              margin-top: 0;
+            }
+          }
+ 
