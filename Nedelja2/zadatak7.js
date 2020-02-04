@@ -1,0 +1,11 @@
+let x = '';
+x = '*';
+console.log(x);
+x = '*'.repeat(2);
+console.log(x);
+x = '*'.repeat(3);
+console.log(x);
+x = '*'.repeat(4);
+console.log(x);
+x = '*'.repeat(5);
+console.log(x);
