@@ -11,11 +11,13 @@ btnText.addEventListener("click", ()=> {
     let date =new Date();
     if(count > 0) {
         pTekst.innerHTML =`You ordered ${count} pizza.<br>${date.getDate()}.${date.getMonth()}.${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}`;
+        count = 0;
+        pCount.innerHTML = count;
+    }
         
-    }
-    if(count > 0) {
-        pCount.innerHTML = 0; 
-    }
+    
+
+    
     else {
         pTekst.innerHTML = 'Your order is not complete.'
     }
@@ -32,11 +34,11 @@ let btnText1 = document.querySelector('#tekst1');
 btnText1.addEventListener("click", ()=> {
     let date =new Date();
     if(count1 > 0) {
-        pTekst1.innerHTML =`You ordered ${count} pizza.<br>${date.getDate()}.${date.getMonth()}.${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}`;
-        
-    }
-    if(count1 > 0) {
-        pCount1.innerHTML = 0; 
+        pTekst1.innerHTML =`You ordered ${count1} pizza.<br>${date.getDate()}.${date.getMonth()}.${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}`;
+        count1 = 0;
+        pCount1.innerHTML = count1;  
+    
+     
     }
     else {
         pTekst1.innerHTML = 'Your order is not complete.'
