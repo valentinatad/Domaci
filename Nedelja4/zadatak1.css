@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+#wrapper {
+    margin: 0;
+    background-color: rgb(211, 13, 79);
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.btn {
+    text-align: center;
+    width: 150px;
+    height: 60px;
+    border: 15px, darkslategrey, solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-size: 1em;
+    color:white;
+    background-color: rgb(102, 101, 101);
+    font-weight: 600px;
+
+}
+.sviPokemoni2 {
+    background-color: rgb(102, 101, 101);;
+    margin-top: 20px;
+    align-content: center;
+}
+p {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+#app {
+    display: flex;
+    height: 700px;
+    background-color: rgb(102, 101, 101);
+    justify-content: space-around;
+    flex-flow: wrap row;
+}
+img {
+    height: 220px;
+    width:210px;
+    margin: 10px;
+    border: rgb(211, 13, 79) 8px dashed;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+.najpokemon {
+    font-size: 1.3em;
+    margin-top: 50px;
+}
+footer {
+    background-image: url("https://sm.ign.com/t/ign_sr/screenshot/default/anime-wallpaper-attempt-update-by-randyadr-d88kgx3_ahpr.1280.jpg");
+    height: 100px;
+}

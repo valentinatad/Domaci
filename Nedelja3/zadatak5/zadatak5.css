@@ -20,6 +20,9 @@ a { color: white;
 a:hover {
     color: grey;
 }
+p {
+  color:white;
+}
 .flex-container {
 display: flex;
 flex-flow: row wrap;
