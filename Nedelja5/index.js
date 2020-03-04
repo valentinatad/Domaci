@@ -40,7 +40,11 @@ let rashod=[];
 let novirashod = '';
 let novaZarada = '';
 let razlika = '';
+let task = {
+};
 procenat1='';
+let zarada1 =[];
+zarada2=[]
 
 
 let count = 0;
@@ -77,25 +81,34 @@ btn.addEventListener('click', (e) => {
         li.appendChild(pBroj);
         lista.appendChild(li);
         listPrihod.appendChild(lista);
-        zarada.push(parseFloat(task.number));
+        zarada1.push(task);
+        console.log(zarada1)
+        zarada.push(parseFloat(task.number))
+        // console.log(zarada)
         novaZarada = zarada.reduce((a,b)=>(a+b));
         prihod.innerHTML = `Prihod +${novaZarada}`;
         count++;
         inputText.value = "";
         inputBroj.value = "";
         
-
-        li.addEventListener('click', () =>
-        {let btnDelete = document.createElement('button');
-        btnDelete.textContent="x";
-        btnDelete.className = "btnDelete";
-         btnDelete.addEventListener('click', () => {
-            li.remove();
-            })
-
-         li.appendChild(btnDelete)})}
-
+        const izbrisatiTask =() => {zarada1.splice(zarada1.findIndex(function (i) {
+            return i.id === task.id;
+        }), +1)}
+      
         
+        li.addEventListener('click', () => {
+        btnDelete.addEventListener('click', () => {
+            izbrisatiTask();
+            zarada2.push(parseFloat(task.number))
+            novaZarada = zarada2.reduce((a,b)=>(a+b))
+            console.log(novaZarada)
+                li.remove();
+            
+         } )
+            li.appendChild(btnDelete) }
+        
+    )}
+    
     if(select.value == "-") {
         let lista1 = document.createElement('ul')
         let li1 = document.createElement('li')
@@ -135,9 +148,7 @@ btn.addEventListener('click', (e) => {
         
 
         li1.addEventListener('click', () =>
-        {let btnDelete = document.createElement('button');
-        btnDelete.textContent="x";
-        btnDelete.className = "btnDelete";
+        {
          btnDelete.addEventListener('click', () => {
              li1.remove();
              
@@ -153,4 +164,13 @@ btn.addEventListener('click', (e) => {
     ostatak.innerHTML=`Na racunu imate: <br> ${razlika} dinara`;})
 
 
-  
+    let btnDelete = document.createElement('button');
+    btnDelete.textContent="x";
+    btnDelete.className = "btnDelete";
+    
+    // const removeElementRashodi = (task) => {
+    //     zarada.splice(zarada.findIndex(function (i) {
+    //         return i.id === task.id;
+    //     }), 1);
+    // };
+        
