@@ -3,7 +3,7 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url('https://wallpaperplay.com/walls/full/e/4/5/54073.jpg');
 }
-.launch-list{
+#launch-list{
     margin-top: 50px;
     display: flex;
     flex-direction: row;

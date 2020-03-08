@@ -1,9 +1,11 @@
 import { getPastLaunches } from '../services/spacex_service'
-import {Launch} from './launch';
+import {Launch, nizLaunch} from './launch';
 //Add filters
-const LaunchList = () => {
+console.log(nizLaunch)
+const LaunchList = (nizLaunch) => {
+    console.log(nizLaunch)
     const div = document.createElement('div');
-    div.className = 'launch-list';
+    div.id = 'launch-list';
 
     getPastLaunches().then(response => {
         // let data=response.data;

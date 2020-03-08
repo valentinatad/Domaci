@@ -1,4 +1,4 @@
-
+let nizLaunch=[];
 const Launch = (launch) => {
     // Object destructuring
     let {
@@ -7,6 +7,8 @@ const Launch = (launch) => {
         launch_date_utc,
         links: { mission_patch }
     } = launch;
+    nizLaunch.push(launch)
+    
     const div = document.createElement('div');
     div.className = 'launch';
 
@@ -33,9 +35,8 @@ const Launch = (launch) => {
     const options={weekday:'short',year:'numeric',month:'numeric',day:'numeric'}
     // date.toLocaleDateString()
     inner_divs[2].innerHTML=
-    `<span>${launch_year}</span><span>${date.toLocaleDateString('sr-RS',options)}</span>`;
-
+    `<span id="datum">${launch_year}</span><span>${date.toLocaleDateString('sr-RS',options)}</span>`;
     return div;
 }
-
-export {Launch};
+console.log(nizLaunch)
+export {Launch, nizLaunch};
