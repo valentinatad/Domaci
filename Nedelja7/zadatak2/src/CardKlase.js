@@ -2,6 +2,7 @@ import React from 'react';
 import DescriptionKlasa from './DescriptionKlase';
 import EmojiKlase from './EmojiKlase';
 class CardKlase extends React.Component{
+    
     render(){
         return(
             <>
