@@ -9,7 +9,8 @@ export class Imenik extends React.Component {
             ime:"",
             broj:"",
             provera:"",
-            imenik:[] 
+            imenik:[{ime:"jojo", broj:"+90909"}], 
+            alert1:""
            }
         
         this.handleInputChange1=(event)=>{
@@ -26,8 +27,9 @@ export class Imenik extends React.Component {
         this.handleInputChange3=(event)=>{
             
             this.setState({
-                
+        
                 provera:event.target.value
+                
             
                 
                 
@@ -35,21 +37,43 @@ export class Imenik extends React.Component {
         }
         
         this.addContact=(e)=>{
+
             e.preventDefault()
+            this.state.alert1=""
             const Kontakt={
                 ime:this.state.ime,
                 broj:this.state.broj         
             }
             
+    
+            if(this.state.imenik.forEach(kontakt=>Kontakt.ime.includes(kontakt.ime)))
+            { 
+                this.setState({
+                    alert1:"Uneli ste vec postojeci broj",
+                    broj:""
+
+                })
+                return
+            }
             if(this.state.ime==="" || this.state.broj==="")
             {
-                alert('Oba polja su obavezna.');
-                return;
+             this.setState({
+                 alert1:"Oba polja moraju biti popunjena",
+                 ime:"",
+                 broj:""
+             })
+            return
+            
             }
             if(!this.state.broj.includes("+"))
             {
-                alert('Mora poceti sa znakom +')
-                return
+               this.setState({
+                   alert1:"Broj mora poceti sa znakom +",
+                   ime:"",
+                   broj:""
+               })
+
+               return
             }
             
             
@@ -61,13 +85,7 @@ export class Imenik extends React.Component {
             }))
              
         }
-           this.proveriIme=(e)=>{
-               e.preventDefault();
-               const filteredList=this.state.lista.filter(kontakt=>this.state.provera.includes(kontakt.ime))
-               this.setState({
-                   lista: filteredList
-               })
-           }
+           
         
     }
 
@@ -83,11 +101,19 @@ export class Imenik extends React.Component {
               
             </form>
               </div>
-
-        
+          
+       
         <div className="App">
-        <h2>Imenik</h2>
+        <p>{this.state.alert1}</p>
         
+        <h2>Imenik</h2>
+        {this.state.imenik.filter(Kontakt=>this.state.provera.includes(Kontakt.ime)).map(contact=><div>
+            <h1>Trazeni broj je:</h1>
+           <h5>{contact.ime}</h5>
+           <p>{contact.broj}</p>
+           <hr/>
+          </div>)
+          }
         {this.state.imenik.map(contact =>
            <div>
            <h5>{contact.ime}</h5>
