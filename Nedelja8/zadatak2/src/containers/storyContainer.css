@@ -1,0 +1,19 @@
+.storyContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.button2 {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+button {
+    padding: 10px;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 4px solid darkgray;
+
+}
